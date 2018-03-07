@@ -12,7 +12,7 @@ public class Test extends JavaPlugin {
 
         getLogger().info("測試插件開始");
 
-        getCommand ( "pubg" ).setExecutor ( new PUBG(this) );
+        getCommand ( "pubg" ).setExecutor ( new PUBG(this ) );
         
         
     }
