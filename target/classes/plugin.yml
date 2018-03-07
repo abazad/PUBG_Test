@@ -1,0 +1,6 @@
+name: Test
+version: 1.0-SNAPSHOT
+main: test.test.Test
+commands:
+  test:
+    description: test
