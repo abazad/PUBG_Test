@@ -1,25 +1,36 @@
 package test.test;
 
 
-import org.bukkit.WorldBorder;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+
 public class WorldBorderEvent extends Event {
     
     private WorldBorder worldBorder;
-    
-    public Player player;
-    
+
+    private Player player;
+
     private static HandlerList handlerList = new HandlerList ();
     
-    public WorldBorderEvent(WorldBorder worldborder){
+    public WorldBorderEvent(WorldBorder worldborder,Player player){
         
         this.worldBorder = worldborder;
         
+        this.player = player;
+        
     }
+
+
+    public WorldBorder getWorldBorder ( ) {
     
+        return worldBorder;
+
+    }
+
+
     @Override
     public HandlerList getHandlers ( ) {
     
@@ -36,7 +47,6 @@ public class WorldBorderEvent extends Event {
     public Player getPlayer(){
         
         return player;
-        
     }
     
 }
