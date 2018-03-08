@@ -49,5 +49,11 @@ public class WorldBorderEvent extends Event {
         return player;
     }
     
+    public String getName(){
+        
+        return player.getName ();
+        
+    }
+    
 }
 
